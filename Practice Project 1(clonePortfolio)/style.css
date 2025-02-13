@@ -1068,8 +1068,8 @@ body footer .available {
 
 .animated {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(10px);
+  transition: all 0.5s ease-in-out;
 }
 
 @media (min-width: 768px) {
