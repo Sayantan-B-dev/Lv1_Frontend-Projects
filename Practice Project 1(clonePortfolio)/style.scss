@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .go-up {
+    .go-up-btn {
         position: fixed;
         bottom: 10px;
         right: 10px;
@@ -887,7 +887,7 @@ body {
             justify-content: center;
             align-items: center;
             margin-bottom: 5rem;
-            width: 100vw;
+            overflow-x: hidden;
 
             .lines {
                 display: flex;
@@ -895,7 +895,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
-                width: 100%;
+                width: 90%;
                 margin: 4rem 2rem;
 
                 .line1 {
@@ -1293,7 +1293,7 @@ body {
         border-bottom: 2px solid rgb(250, 230, 207);
     }
 }
-
+//animated classes that are tied with JS...display and menu-open are using clickable item and animated are in html class
 .display {
     display: flex !important;
 }
@@ -1303,6 +1303,11 @@ body {
     filter: invert(6%) sepia(61%) saturate(543%) hue-rotate(45deg) brightness(95%) contrast(90%);
 }
 
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
 @media (min-width:768px) {
     #profile-image {
         width: 30%;
