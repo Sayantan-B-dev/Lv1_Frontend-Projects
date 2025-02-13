@@ -943,7 +943,6 @@ body footer .footer-intro .footer-intro-part2 .info-all .info-third,
 body footer .footer-intro .footer-intro-part2 .info-all .info-forth {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
   width: 100%;
@@ -952,16 +951,14 @@ body footer .footer-intro .footer-intro-part2 .info-all .info-first .head-info,
 body footer .footer-intro .footer-intro-part2 .info-all .info-second .head-info,
 body footer .footer-intro .footer-intro-part2 .info-all .info-third .head-info,
 body footer .footer-intro .footer-intro-part2 .info-all .info-forth .head-info {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
-}
-body footer .footer-intro .footer-intro-part2 .info-all .info-first {
-  justify-content: space-between;
 }
 body footer .footer-intro .footer-intro-part2 .info-all .info-first .contacts {
   display: grid;
   gap: 1rem;
+  margin-top: 19.5%;
 }
 body footer .footer-intro .footer-intro-part2 .info-all .info-first .contacts div {
   display: flex;
@@ -1035,7 +1032,10 @@ body footer .footer-intro .footer-intro-part2 .info-all .info-forth .extra {
   gap: 1rem;
 }
 body footer .footer-intro .footer-intro-part2 .copyright {
+  width: 100%;
+  text-align: center;
   margin-top: 3rem;
+  font-size: 0.7rem;
   font-weight: 200;
 }
 body footer .available {
@@ -1090,6 +1090,10 @@ body footer .available {
     flex-direction: row;
     justify-content: space-between;
   }
+  body main .section-4 .card-direction {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   body main .section-5 .section5-intro .section5-intro-part2 {
     justify-content: center;
   }
@@ -1132,6 +1136,7 @@ body footer .available {
   .info-second,
   .info-third,
   .info-forth {
+    text-align: start;
     width: 25%;
     gap: 5rem;
   }
