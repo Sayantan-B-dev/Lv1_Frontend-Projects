@@ -15,34 +15,43 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-
+<body id="top">
+    <a href="#top" class="go-up"><img src="./image/arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
     <header>
-        <h1>Sayantan-B-Dev</h1>
-        <ul type="none" id="ul">
-            <div>
-                <li><a href="">Services</a></li>
-                <div class="line"></div>
+        <nav>
+            <h1>Sayantan-B-Dev</h1>
+            <ul type="none" id="ul">
+                <div>
+                    <li><a href="">Services</a></li>
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <li><a href="">Work</a></li>
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <li><a href="">About</a></li>
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <li><a href="">Blog</a></li>
+                    <div class="line"></div>
+                </div>
+            
+            </ul>
+            <div class="header-end">
+                <button id="letstalkbtn">LET'S TALK</button>
+                <img id="menu" class="menu" src="./image/icons8-menu.svg" alt="">
             </div>
-            <div>
-                <li><a href="">Work</a></li>
-                <div class="line"></div>
-            </div>
-            <div>
-                <li><a href="">About</a></li>
-                <div class="line"></div>
-            </div>
-            <div>
-                <li><a href="">Blog</a></li>
-                <div class="line"></div>
-            </div>
-
-        </ul>
-        <div class="header-end">
-            <button id="letstalkbtn">LET'S TALK</button>
-            <img id="menu" class="menu" src="./image/icons8-menu.svg" alt="">
+        </nav>
+        <div class="dropdown" id="dropdown">
+            <h3>Service</h3>
+            <h3>About</h3>
+            <h3>Work</h3>
+            <h3>Pricing</h3>
+            <h3>Contact</h3>
+            <button id="letstalkbtn2">LET'S TALK</button>
         </div>
-
     </header>
 
     <main>
@@ -512,7 +521,6 @@
             </div>
         </section>
 
-
         <section class="section-7">
             <div class="lines">
                 <div class="line1"></div>
@@ -542,7 +550,6 @@
             </div>
 
         </section>
-
     </main>
 
     <footer>
@@ -621,6 +628,21 @@
         <div class="available"><li>Available</li></div>
     </footer>
 
+<script>
+    const menu=document.querySelector('#menu');
+    const dropdown=document.querySelector('#dropdown')
+    menu.addEventListener('click',(e)=>{
+        e.preventDefault()
+        dropdown.classList.toggle('display');
+        menu.classList.toggle('menu-open');
+    })
+    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scrolling to top
+            });
+        });
+</script>
 </body>
 
 </html>
