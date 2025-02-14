@@ -72,7 +72,7 @@ body header nav {
   margin-top: 20px;
   padding: 1rem 0.5rem;
 }
-body header nav h1 {
+body header nav .navh1 {
   font-family: "Quicksand", serif;
   font-weight: 300;
   font-size: 1.5rem;
@@ -195,7 +195,7 @@ body main {
 }
 body main .section-1 {
   width: 100%;
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,11 +225,11 @@ body main .section-1 .section-div .text-div {
   align-items: center;
   text-align: center;
 }
-body main .section-1 .section-div .text-div h1 {
+body main .section-1 .section-div .text-div .s1-h1 {
   margin-top: 2rem;
   font-weight: 200;
   width: 100%;
-  font-size: 5rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 body main .section-1 .section-div .text-div .paragraph-div {
@@ -395,7 +395,7 @@ body main .section-4 .card-direction {
   align-items: center;
   margin-bottom: 2rem;
 }
-body main .section-4 .card-direction h1 {
+body main .section-4 .card-direction .s4-h1 {
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 2.5rem;
@@ -531,7 +531,7 @@ body main .section-5 .section5-intro .section5-intro-part1 {
 body main .section-5 .section5-intro .section5-intro-part1 p {
   font-weight: 400;
 }
-body main .section-5 .section5-intro .section5-intro-part1 h1 {
+body main .section-5 .section5-intro .section5-intro-part1 .s5-h1 {
   margin-top: 2rem;
   font-weight: 200;
   width: 100%;
@@ -656,14 +656,14 @@ body main .section-6 .text-div {
   align-items: center;
   text-align: center;
 }
-body main .section-6 .text-div h1 {
+body main .section-6 .text-div .s6-h1 {
   margin-top: 2rem;
   font-weight: 200;
   width: 100%;
   font-size: 5rem;
   cursor: pointer;
 }
-body main .section-6 .text-div h1 i {
+body main .section-6 .text-div .s6-h1 i {
   font-size: 4rem;
 }
 body main .section-6 .text-div .paragraph-div {
@@ -794,7 +794,7 @@ body main .section-7 .text-div {
   align-items: center;
   padding: 4rem 2rem;
 }
-body main .section-7 .text-div h1 {
+body main .section-7 .text-div .s7-h1 {
   margin-top: 2rem;
   font-weight: 300;
   width: 100%;
@@ -802,7 +802,7 @@ body main .section-7 .text-div h1 {
   cursor: pointer;
   text-align: center;
 }
-body main .section-7 .text-div h1 i {
+body main .section-7 .text-div .s7-h1 i {
   font-weight: 200;
 }
 body main .section-7 .text-div .paragraph-div {
@@ -1091,6 +1091,9 @@ body footer .available {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  body main .section-1 .section-div .text-div .s1-h1 {
+    font-size: 5rem;
+  }
   .section-4 .card-direction {
     display: flex;
     flex-direction: row;
@@ -1126,7 +1129,7 @@ body footer .available {
     display: flex;
     flex-direction: row;
   }
-  body main .section-7 .text-div h1 {
+  body main .section-7 .text-div .s7-h1 {
     font-size: 4rem;
   }
   body main .section-7 .img-div img {
