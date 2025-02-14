@@ -1306,7 +1306,7 @@ body {
 .animated {
     opacity: 0;
     transform: translateY(10px);
-    transition: all 0.5s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 @media (min-width:768px) {
     #profile-image {
@@ -1337,10 +1337,10 @@ body {
         justify-content: space-between;
     }
 
-        body main .section-4 .card-direction {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    body main .section-4 .card-direction {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     body main .section-5 .section5-intro .section5-intro-part2 {
         justify-content: center;
     }
