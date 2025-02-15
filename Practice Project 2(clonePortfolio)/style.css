@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+a:hover {
+  cursor: pointer;
+}
+
+.page {
+  display: block;
+}
+
+.notpage {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  .page {
+    display: none;
+  }
+  .notpage {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .section1 .profile {
+    height: 60rem;
+  }
+}/*# sourceMappingURL=style.css.map */
