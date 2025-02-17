@@ -862,7 +862,6 @@ footer {
         font-weight: 400;
         justify-content: space-between;
         padding-top: 1rem;
-
         div {
             display: flex;
             gap: 1rem;
@@ -1165,10 +1164,18 @@ footer {
         height: 15rem !important;
     }
     footer .footer-bottom {
-        font-size: 1rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    footer .footer-bottom h2{
+        font-size: 0.7rem;
+    }
+    footer .footer-bottom a{
+        text-decoration: underline;
+    }
+    footer .footer-bottom div{
+        font-size: 0.4rem;
     }
 }
 button{
