@@ -1,13 +1,507 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Ubuntu", serif;
   letter-spacing: 1px;
+}
+
+header {
+  padding: 0rem 1rem;
+}
+header .main-head {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main-head .logo {
+  padding: 1rem 0rem;
+}
+header .main-head .logo img {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  left: 0;
+  filter: invert(0%) brightness(0%);
+}
+header .main-head .navLinks {
+  display: none;
+}
+header .main-head .searchZone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main-head .searchZone .inputField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+header .main-head .searchZone .inputField label {
+  width: 2rem;
+  height: 1.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: 1px solid black;
+  border-right: none;
+  border: none;
+}
+header .main-head .searchZone .inputField label img {
+  width: 2rem;
+  height: 1.5rem;
+  filter: invert(0%) brightness(0%);
+}
+header .main-head .searchZone .inputField input {
+  display: none;
+  width: 5rem;
+  height: 1.5rem;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-left: none;
+}
+header .main-head .searchZone .sign-in {
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  height: 2rem;
+  padding: 0rem 1rem;
+  border: none;
+}
+header .main-head .searchZone .menu {
+  width: 2rem;
+  height: 1.5rem;
+  filter: invert(0%) brightness(0%);
+}
+
+main {
+  padding: 0rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .section1 {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "txt" "img" "btn";
+  text-align: start;
+  text-wrap: wrap;
+}
+main .section1 .s1-texts {
+  grid-area: txt;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 0rem;
+}
+main .section1 .s1-texts h1 {
+  font-size: 1.5rem;
+}
+main .section1 .s1-texts h1 span {
+  color: magenta;
+}
+main .section1 .s1-texts p {
+  font-size: 0.7rem;
+}
+main .section1 .s1-images {
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 1rem;
+  grid-area: img;
+  display: grid;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c";
+}
+main .section1 .s1-images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1rem;
+}
+main .section1 .s1-images #s1-img1 {
+  grid-area: a;
+}
+main .section1 .s1-images #s1-img2 {
+  grid-area: b;
+}
+main .section1 .s1-images #s1-img3 {
+  grid-area: c;
+}
+main .section1 .s1-btn {
+  grid-area: btn;
+  padding: 2rem 0;
+  margin: auto;
+}
+main .section1 .s1-btn button {
+  background-color: rgb(48, 54, 47);
+  border-radius: 2rem;
+  color: white;
+  height: 2rem;
+  padding: 0rem 2rem;
+  border: none;
+}
+main .section2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .section2 .s2-texts {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .section2 .s2-texts select {
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .section2 .s2-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 1rem;
+}
+main .section2 .s2-cards .s2-each-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+main .section2 .s2-cards .s2-each-card img {
+  border-radius: 1rem;
+  width: 15rem;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section2 .s2-cards .s2-each-card p {
+  font-size: 0.7rem;
+}
+main .section3 {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "text" "card" "btn";
+}
+main .section3 .s3-text {
+  grid-area: text;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+main .section3 .s3-cards {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "a a a a" "a a a a" "a a a a" "b b b b" "c c c c" "d d d d";
+  gap: 1.5rem;
+}
+main .section3 .s3-cards .s3-first-card {
+  flex-direction: column;
+}
+main .section3 .s3-cards .s3-each-card {
+  flex-direction: row;
+  gap: 1rem;
+}
+main .section3 .s3-cards .s3-first-card,
+main .section3 .s3-cards .s3-each-card {
+  width: 100%;
+  display: flex;
+}
+main .section3 .s3-cards .s3-first-card .s3-card-img-div,
+main .section3 .s3-cards .s3-each-card .s3-card-img-div {
+  width: 100%;
+}
+main .section3 .s3-cards .s3-first-card .s3-card-img-div img,
+main .section3 .s3-cards .s3-each-card .s3-card-img-div img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 1px solid black;
+}
+main .section3 .s3-cards .s3-first-card .s3-card-text-div,
+main .section3 .s3-cards .s3-each-card .s3-card-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.3rem 0rem;
+}
+main .section3 .s3-cards .s3-first-card .s3-card-text-div h5,
+main .section3 .s3-cards .s3-each-card .s3-card-text-div h5 {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+main .section3 .s3-cards .s3-first-card .s3-card-text-div p,
+main .section3 .s3-cards .s3-each-card .s3-card-text-div p {
+  font-size: 0.7rem;
+}
+main .section3 .s3-cards #s3-card1 {
+  grid-area: a;
+}
+main .section3 .s3-cards #s3-card2 {
+  grid-area: b;
+}
+main .section3 .s3-cards #s3-card3 {
+  grid-area: c;
+}
+main .section3 .s3-cards #s3-card4 {
+  grid-area: d;
+}
+main .section4 {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "t t t t" "a a a a" "a a a a" "a a a a" "b b b b" "b b b b" "b b b b" "b b b b" "c c c c" "c c c c" "c c c c" "d d d d";
+  gap: 1rem;
+}
+main .section4 .s4-title {
+  padding: 1rem 0rem;
+}
+main .section4 .s4-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+main .section4 .s4-text .profile {
+  display: flex;
+  gap: 0.5rem;
+}
+main .section4 .s4-text .profile img {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .section4 .s4-text .profile .profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .section4 .s4-text .profile .profile-info h3 {
+  font-size: 1rem;
+}
+main .section4 .s4-text .profile .profile-info p {
+  font-size: 0.7rem;
+}
+main .section4 .s4-text .comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .section4 .s4-text .comment p {
+  font-size: 1rem;
+}
+main .section4 .s4-img img {
+  width: 100%;
+  aspect-ratio: 1/1.3;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .section4 .s4-video {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .section4 .s4-video iframe {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+}
+main .section4 #s4-title {
+  grid-area: t;
+}
+main .section4 #s4-text {
+  grid-area: a;
+}
+main .section4 #s4-img {
+  grid-area: b;
+}
+main .section4 #s4-video {
+  grid-area: c;
+}
+main .section4 #s4-btn {
+  grid-area: d;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+footer .section5 {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 63, 63);
+  color: white;
+}
+footer .section5 .s5-input {
+  display: flex;
+  gap: 0.5rem;
+}
+footer .section5 .s5-input input {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  height: 2rem;
+}
+footer .section5 .s5-input button {
+  background-color: rgb(48, 54, 47);
+  border-radius: 1rem;
+  color: white;
+  height: 2rem;
+  padding: 0rem 1rem;
+  border: none;
+}
+footer .section5 p {
+  font-weight: 200;
+  text-align: center;
+}
+footer .section6 {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .section6 .s6-logo {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .section6 .s6-logo .mainLogo {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  left: 0;
+  filter: invert(0%) brightness(0%);
+}
+footer .section6 .s6-logo .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 0.5rem;
+}
+footer .section6 .s6-logo .contact-info h3 {
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+}
+footer .section6 .s6-logo .contact-info img {
+  width: 1rem;
+  aspect-ratio: 1/1;
+  filter: invert(0%) brightness(0%);
+}
+footer .section6 .s6-lists {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+footer .section6 .s6-lists h3 {
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+}
+footer .section6 .s6-lists div {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .section7 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background-color: rgb(12, 9, 6);
+  color: white;
+}
+footer .section7 p {
+  font-size: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.s2-btn,
+.s3-btn,
+.s4-btn {
+  padding: 1.5rem 0;
+  margin: auto;
+}
+.s2-btn button,
+.s3-btn button,
+.s4-btn button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  padding: 0rem 1.5rem;
+  border: 1px solid black;
+}
+
+a {
+  color: black;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+a:hover::after {
+  width: 100%;
+}
+
+.border-img {
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */

@@ -1,47 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-4</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project-4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+
 </head>
+
 <body>
-    <header>
-        <div></div>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+  <!-- //////////////////////////////////////////// -->
+  <header>
+    <div class="main-head">
+      <div class="logo"><img src="./images/logoipsum-363.svg" alt="" /></div>
+      <div class="navLinks">
+        <a href="">Portfolio</a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+      <div class="searchZone">
+        <div class="inputField">
+          <label for="search"><img src="./images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="" /></label>
+          <input id="search" placeholder="Search" type="text" />
         </div>
-        <div>
-            <div>
-                <input type="text">
-            </div>
-            <button></button>
+        <button class="sign-in">Sign in</button>
+        <img class="menu" src="./images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+      </div>
+    </div>
+  </header>
+  <!-- //////////////////////////////////////////// -->
+  <main>
+    <section class="section1">
+      <div class="s1-texts">
+        <h1>Explore <span>My</span> Coding Adventures</h1>
+        <p>Discover my coding journey as I explore algorithms, data structures, and exciting projects.<br>
+          Each challenge enhances my skills, pushing me to learn, create, and grow
+          in the ever-evolving world of programming.
+        </p>
+      </div>
+      <div class="s1-images">
+        <img id="s1-img1" src="https://img.freepik.com/free-vector/programmer-working-with-c_52683-23278.jpg?t=st=1739974196~exp=1739977796~hmac=10575c18d6f47f5c919916ee22bcadd259f79815060bdb494aa7d167a4d5e37c&w=740" alt="" />
+        <img id="s1-img2" class=" border-img" src="https://img.freepik.com/free-vector/linear-web-development-illustration_1257-357.jpg?t=st=1739974356~exp=1739977956~hmac=adcfb55d898963e35617af15caaf226203a3dce96bce1ede3da7f85ccbfb0c90&w=740" alt="" />
+        <img id="s1-img3" src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1739974280~exp=1739977880~hmac=efcf5cb059c9011c6162c11ffc5c522ca26f482a3a8d09b480ef3dc830cf8797&w=740" alt="" />
+      </div>
+      <div class="s1-btn">
+        <button>Start Exploring</button>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////// -->
+    <section class="section2">
+      <div class="s2-texts">
+        <h1>Top Technologies</h1>
+        <select name="technologies" id="techs">
+          <option value="MERN">MERN</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="AI/ML">AI/ML</option>
+        </select>
+      </div>
+      <div class="s2-cards">
+        <div class="s2-each-card">
+          <div class="s2-card-image">
+            <img
+              src="https://img.freepik.com/free-photo/ai-nuclear-energy-future-innovation-disruptive-technology_53876-129784.jpg?t=st=1739963590~exp=1739967190~hmac=7ca20231d95f62ec14b53d28b6c9091dfa5e1fcaa533a4fc9d0e08ddf46b7e6a&w=360"
+              alt="">
+          </div>
+          <div class="s2-card-text">
+            <h5>MERN Stack Development</h5>
+            <p>MongoDB, Express, React, Node</p>
+          </div>
         </div>
-    </header>
-    <main>
-        <section class="section1">
-            <div>
-                <h1></h1>
-                <p></p>
-                <button></button>
-            </div>
-            <div>
-                <div><img src="#" alt=""></div>
-                <div><img src="#" alt=""></div>
-                <div><img src="#" alt=""></div>
-            </div>
-        </section>
-        <section class="section2"></section>
-        <section class="section3"></section>
-        <section class="section4"></section>
-        <section class="section5"></section>
-        <section class="section6"></section>
-    </main>
-    <footer></footer>
+        <div class="s2-each-card">
+          <div class="s2-card-image">
+            <img
+              src="https://img.freepik.com/free-photo/asian-young-male-wearing-wearable-goggle-headset-virtual-online-meeting-digital-space-working-with-3d-augmented-dimension-homecyber-virtual-working-with-virtual-vr-goggle-pc-desktop-device_609648-2614.jpg?t=st=1739973609~exp=1739977209~hmac=fa5a7d625d93eafef890374dbc1a39450f3b415bc731ec40246f1cff7f1c4fc4&w=826"
+              alt="">
+          </div>
+          <div class="s2-card-text">
+            <h5>Python Programming Basics</h5>
+            <p>Simple, versatile, powerful, widely used</p>
+          </div>
+        </div>
+        <div class="s2-each-card">
+          <div class="s2-card-image">
+            <img
+              src="https://img.freepik.com/premium-vector/wireframe-illustration-touch-future_87494-86.jpg?w=740"
+              alt="">
+          </div>
+          <div class="s2-card-text">
+            <h5>Java Software Engineering</h5>
+            <p>OOP, JVM, robust, platform-independent</p>
+          </div>
+        </div>
+        <div class="s2-each-card">
+          <div class="s2-card-image">
+            <img
+              src="https://img.freepik.com/free-vector/combination-circuit-head-shape-artificial-intelligence-moral-electronic-world-illustration_456031-123.jpg?t=st=1739973654~exp=1739977254~hmac=076791cdeff9b5fac61d17486ff76830635a77b993800c4c10bfd830b5bb5826&w=900"
+              alt="">
+          </div>
+          <div class="s2-card-text">
+            <h5>AI and Machine Learning</h5>
+            <p>Neural networks, data, algorithms, models</p>
+          </div>
+        </div>
+      </div>
+      <div class="s2-btn">
+        <button>Explore Technology</button>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////// -->
+    <section class="section3">
+      <div class="s3-text">
+        <h1>Latest Updates</h1>
+      </div>
+
+      <div class="s3-cards">
+        <div class="s3-first-card" id="s3-card1">
+          <div class="s3-card-img-div">
+            <img
+              src="https://img.freepik.com/free-photo/realistic-g-letter-with-holes_23-2150458478.jpg?t=st=1739973764~exp=1739977364~hmac=754a83977650e01f51dd8b9f40b5cf648edd7870d5be2176369a356fe26b8d08&w=740"
+              alt="">
+          </div>
+          <div class="s3-card-text-div">
+            <h5>October 2024</h5>
+            <h4>Started Learning C</h4>
+            <p>Understanding syntax, functions, and loops.</p>
+          </div>
+        </div>
+
+        <div class="s3-each-card" id="s3-card2">
+          <div class="s3-card-img-div">
+            <img
+              src="https://img.freepik.com/free-vector/data-report-illustration-concept_114360-883.jpg?t=st=1739973725~exp=1739977325~hmac=ad93926c81972c4ec7479e77d8fba47263e9eeabc67d464b807c5dd9997252b3&w=740"
+              alt="">
+          </div>
+          <div class="s3-card-text-div">
+            <h5>November 2024</h5>
+            <h4>Exploring Data Structures</h4>
+            <p>Working with stacks, queues, and linked lists.</p>
+          </div>
+        </div>
+
+        <div class="s3-each-card" id="s3-card3">
+          <div class="s3-card-img-div">
+            <img
+              src="https://img.freepik.com/free-vector/machine-learning-banner-artificial-intelligence_107791-611.jpg?t=st=1739973561~exp=1739977161~hmac=b32b0d0cae148291431a7e39b43ba153d9e8879faf194fdd33a038c39c726cbb&w=996"
+              alt="">
+          </div>
+          <div class="s3-card-text-div">
+            <h5>December 2024</h5>
+            <h4>Diving into Algorithms</h4>
+            <p>Solving sorting, searching, and graph problems.</p>
+          </div>
+        </div>
+
+        <div class="s3-each-card" id="s3-card4">
+          <div class="s3-card-img-div">
+            <img
+              src="https://img.freepik.com/free-photo/operation-process-performance-development-icon_53876-16541.jpg?t=st=1739973853~exp=1739977453~hmac=ddbd8e86fe4cbdccaddc52dfdcbd820142e0b087ee6ae820e37f2292a038de2f&w=740"
+              alt="">
+          </div>
+          <div class="s3-card-text-div">
+            <h5>January 2025</h5>
+            <h4>Building Real Projects</h4>
+            <p>Developing apps, websites, and solving challenges.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="s3-btn">
+        <button>Explore Technology</button>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////////// -->
+    <section class="section4">
+      <div class="s4-title" id="s4-title">
+        <h1>Top Review</h1>
+      </div>
+
+      <div class="s4-text" id="s4-text">
+        <div class="profile">
+          <img src="https://img.freepik.com/free-photo/happy-smiling-man-with-glasses_23-2149202893.jpg"
+            alt="Profile Picture">
+          <div class="profile-info">
+            <h3>Alex Thompson</h3>
+            <p>Software Engineer, TechCorp</p>
+          </div>
+        </div>
+        <div class="comment">
+          <p>⭐⭐⭐⭐⭐</p>
+          <h4>Exceptional Quality &amp; Innovation</h4>
+          <p>Your coding skills are next level! The attention to detail, problem-solving, and clean architecture make
+            your work stand out. Truly impressive!</p>
+        </div>
+      </div>
+
+      <div class="s4-img" id="s4-img">
+        <img src="https://img.freepik.com/free-photo/man-drawing-bulb-gears_1134-465.jpg?t=st=1739973919~exp=1739977519~hmac=198b12a87132272db1936ab63806ba2c9d39d6aa9b1ed8ddef286c7039fd6164&w=826" alt="Your Work Showcase">
+      </div>
+
+      <div class="s4-video" id="s4-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bRrIhgn52m0?si=b5ZC5Y_97e9D-GKH"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Watch how this incredible project was built.</p>
+      </div>
+
+      <div class="s4-btn" id="s4-btn">
+        <button>See More Projects</button>
+      </div>
+    </section>
+  </main>
+  <!-- //////////////////////////////////////////// -->
+  <footer>
+    <section class="section5">
+      <h1>Stay Updated</h1>
+      <div class="s5-input">
+        <input type="text" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+      <p>Get the latest updates on my work, projects, and insights directly to your inbox.</p>
+    </section>
+    <!-- //////////////////////////////////////////// -->
+    <section class="section6">
+      <div class="s6-logo">
+          <img class="mainLogo" src="./images/logoipsum-363.svg" alt="Logo">
+          <div class="contact-info">
+              <h3>Connect With Me</h3>
+              <div>
+                  <a href=""><img src="./images/icons8-github.svg" alt="GitHub Logo"></a>
+                  <a href=""><img src="./images/icons8-x.svg" alt="X (Twitter) Logo"></a>
+                  <a href=""><img src="./images/icons8-linked-in.svg" alt="LinkedIn Logo"></a>
+                  <a href=""><img src="./images/icons8-instagram (1).svg" alt="Instagram Logo"></a>
+                  <a href=""><img src="./images/icons8-geeksforgeeks.svg" alt="GeeksforGeeks Logo"></a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="s6-lists">
+          <h3>Quick Links</h3>
+          <div>
+              <a href="#">Home</a>
+              <a href="#">About Me</a>
+              <a href="#">Projects</a>
+              <a href="#">Blog</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Contact</a>
+          </div>
+      </div>
+  
+      <div class="s6-lists">
+          <h3>Resources</h3>
+          <div>
+              <a href="#">Documentation</a>
+              <a href="#">Code Snippets</a>
+              <a href="#">Tutorials</a>
+              <a href="#">FAQs</a>
+              <a href="#">Open Source</a>
+              <a href="#">Community</a>
+              <a href="#">Support</a>
+          </div>
+      </div>
+  
+      <div class="s6-lists">
+          <h3>Technologies</h3>
+          <div>
+              <a href="#">HTML & CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">React.js</a>
+              <a href="#">Python</a>
+              <a href="#">C & C++</a>
+              <a href="#">Node.js</a>
+              <a href="#">AI & ML</a>
+          </div>
+      </div>
+  
+      <div class="s6-lists">
+          <h3>Legal</h3>
+          <div>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">License</a>
+          </div>
+      </div>
+    </section>
+
+    <section class="section7">
+      <p>Made with ❤️ by Sayantan</p>
+      <p>&copy;2025 Sayantan-B-Dev</p>
+    </section>
+  </footer>
+  <!-- //////////////////////////////////////////// -->
 </body>
+
 </html>
