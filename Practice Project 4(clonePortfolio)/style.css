@@ -127,7 +127,7 @@ main .section1 .s1-images {
   display: grid;
   grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c";
 }
-main .section1 .s1-images img {
+main .section1 .s1-images div img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -238,7 +238,6 @@ main .section3 .s3-cards .s3-each-card .s3-card-img-div img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border: 1px solid black;
 }
 main .section3 .s3-cards .s3-first-card .s3-card-text-div,
 main .section3 .s3-cards .s3-each-card .s3-card-text-div {
@@ -504,4 +503,170 @@ a:hover::after {
 
 .border-img {
   border: 1px solid black;
+}
+
+@media (min-width: 778px) {
+  header {
+    padding: 0rem 2.5rem;
+  }
+  main {
+    padding: 0rem 2.5rem;
+  }
+  main .section1 {
+    grid-template-areas: "txt img" "txt img" "txt img" "txt img" "btn btn";
+    gap: 2rem;
+  }
+  main .section3 .s3-cards {
+    grid-template-areas: "a a a a b b b b" "a a a a c c c c" "a a a a d d d d";
+  }
+  .s3-first-card .s3-card-img-div {
+    height: 100%;
+  }
+  .s3-first-card .s3-card-img-div img {
+    height: 100%;
+  }
+  main .section4 {
+    grid-template-areas: "t t t t t t t t" "a a a a a a a a" "a a a a a a a a" "a a a a a a a a" "b b b b c c c c" "b b b b c c c c" "d d d d c c c c";
+  }
+  main .section4 .s4-img img {
+    width: 100%;
+    aspect-ratio: 1/0.7;
+  }
+}
+@media (min-width: 1020px) {
+  main .section3 .s3-cards {
+    grid-template-areas: "a a b b" "a a b b" "c c d d" "c c d d";
+  }
+  .s3-each-card .s3-card-img-div {
+    height: 100%;
+  }
+  .s3-each-card .s3-card-img-div img {
+    height: 100%;
+  }
+  main .section3 .s3-cards .s3-each-card {
+    flex-direction: column;
+  }
+  main .section1 .s1-texts {
+    padding: 0;
+    gap: 3rem;
+  }
+  main .section1 .s1-texts h1 {
+    font-size: 3rem;
+  }
+  main .section1 .s1-texts p {
+    font-size: 1.5rem;
+  }
+  main .section3 .s3-cards .s3-first-card {
+    gap: 1.5rem;
+  }
+  main .section3 .s3-cards .s3-each-card {
+    gap: 1.5rem;
+  }
+  main .section3 .s3-cards .s3-first-card .s3-card-text-div h5,
+  main .section3 .s3-cards .s3-each-card .s3-card-text-div h5 {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  main .section3 .s3-cards .s3-first-card .s3-card-text-div p,
+  main .section3 .s3-cards .s3-each-card .s3-card-text-div p {
+    font-size: 1.5rem;
+  }
+  main .section4 {
+    padding-bottom: 4rem;
+    grid-template-areas: "t t t t t t t t" "a a a a a a a a" "b b b b c c c c" "b b b b d d d d";
+  }
+  #s4-btn {
+    margin-bottom: 10rem;
+  }
+  main .section4 .s4-img {
+    width: 100%;
+  }
+  main .section4 .s4-video {
+    width: 100%;
+  }
+  .s1-images {
+    grid-template-areas: ". . b b" ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" ". . c c" ". . c c";
+  }
+  .section2, .section3, .section4 {
+    border-top: 1px solid black;
+  }
+  footer .section6 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  footer .section6 .s6-lists {
+    align-items: start;
+  }
+  footer .section6 .s6-lists div {
+    align-items: start;
+    text-align: start;
+  }
+  footer .section7 {
+    padding: 1rem 20rem;
+  }
+  header .main-head .navLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  header .main-head .searchZone .inputField input {
+    display: block;
+  }
+  header .main-head .searchZone .menu {
+    display: none;
+  }
+  header .main-head .searchZone .inputField label {
+    border: 1px solid black;
+    border-right: none;
+  }
+  header .main-head .searchZone {
+    gap: 1rem;
+  }
+}
+.image-container {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.image-container img {
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+button {
+  overflow: hidden;
+}
+
+button, button p {
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button:hover p {
+  animation: side 0.2s steps(30, end) forwards;
+}
+
+@keyframes side {
+  0% {
+    transform: translateY(0px);
+  }
+  49% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=style.css.map */
