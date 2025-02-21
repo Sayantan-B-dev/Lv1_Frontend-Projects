@@ -318,6 +318,7 @@ main .section2 .s2-part2 .s2-part2-texts {
   border-right: 1px solid black;
   padding: 0rem 1rem;
   gap: 1rem;
+  background-color: white;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -744,7 +745,6 @@ footer .footer-bottom div {
   }
   main .section2 .s2-part2 .s2-part2-texts {
     width: 100%;
-    height: 30vh;
     border-bottom: 1px solid black;
   }
   main .section2 .s2-part2 .s2-part2-texts h1 {
@@ -777,6 +777,10 @@ footer .footer-bottom div {
   }
 }
 @media (max-width: 980px) {
+  main .section2 .s2-part2 {
+    flex-direction: column;
+    padding-top: 0;
+  }
   main .section2 .s2-part2 .s2-part2-texts {
     height: 50vh;
     border-bottom: 1px solid black;
@@ -851,10 +855,6 @@ footer .footer-bottom div {
     border-top: 1px solid black;
     padding: 1.5rem 0px;
     max-width: 100%;
-  }
-  main .section2 .s2-part2 {
-    flex-direction: column;
-    padding-top: 0;
   }
   main .section2 .s2-part2 .s2-part2-texts {
     border-right: 0px solid black;
